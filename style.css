@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(252, 71, 102);
+    padding: 10px;
+    color: #fff;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+.content-boxes{
+    margin-top: 40px;
+    width: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+.details{
+    display: flex;
+    border: 1px solid #fff;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+.details img{
+    height: 20px;
+    width: 20px;
+}
+.details div{
+    display: flex;
+    margin-top: 5px;
+}
+.details div p {
+    margin-left: 5px;
+}
+.box h3 img{
+    height: 30px;
+    width: 30px;
+}
+.box h3{
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .content-boxes {
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content-boxes {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+    .content-boxes {
+        width: 90%;
+        padding: 15px;
+    }
+    .details {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details div {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        padding: 10%;
+    }
+    .header {
+        font-size: 1em;
+        padding: 6px;
+    }
+    .content-boxes {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .details {
+        padding: 10px;
+    }
+    .details img {
+        height: 15px;
+        width: 15px;
+    }
+    .details div p {
+        font-size: 0.9em;
+    }
+    .box h3 img {
+        height: 25px;
+        width: 25px;
+    }
+}
